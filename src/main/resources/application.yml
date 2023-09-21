@@ -16,6 +16,9 @@ spring:
   batch:
     jdbc:
       initialize-schema: embedded
+      # Always : 스크립트 항상 실행, RDBMS 설정될 경우 사용
+      # embedded : 내장 DB일 경우 사용
+      # never : 운영에서 수동으로 스크립트 생성 후 설정하는 것을 권장
 
 
 ---
