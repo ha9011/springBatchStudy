@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @EnableBatchProcessing
 public class SpringBatchLectureApplication {
-
+//qwe
     public static void main(String[] args) {
         SpringApplication.run(SpringBatchLectureApplication.class, args);
     }
