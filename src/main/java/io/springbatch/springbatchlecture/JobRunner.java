@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 @Component
-public class JobRunner implements ApplicationRunner {
+public class JobRunner implements ApplicationRunner { // spring boot가 초기화 되고 완료되면 바로 호출됨
 
     @Autowired
     private JobLauncher jobLauncher;
@@ -24,8 +24,8 @@ public class JobRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
 
         JobParameters jobParameters = new JobParametersBuilder()
-                .addString("name", "user1")
-//                .addDate("reqDate", new Date())
+                .addString("name", "user3")
+                .addDate("reqDate", new Date())
                 .toJobParameters();
 
         jobLauncher.run(job,jobParameters);

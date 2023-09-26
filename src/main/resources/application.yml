@@ -24,12 +24,12 @@ spring:
       on-profile: mysql
   datasource:
     hikari:
-      jdbc-url: jdbc:mysql://localhost:3306/springbatch?useUnicode=true&characterEncoding=utf8
+      jdbc-url: jdbc:mysql://localhost:3308/springBatch?useUnicode=true&characterEncoding=utf8
       username: root
-      password: pass
-      driver-class-name: com.mysql.jdbc.Driver
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
   batch:
     jdbc:
       initialize-schema: always
     job:
-      enabled: false
+      enabled: false #기본값은 true // false로 할 경우 자동실행 취소
